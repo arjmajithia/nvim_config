@@ -36,8 +36,15 @@ function ColorMyPencils(color)
         vim.api.nvim_set_hl(0, thing, opts)
     end
 
+    hl("@lsp.type.class.cpp", {})
+    hl("@lsp.typemod.method.defaultLibrary.cpp", {})
+    hl("@lsp.typemod.function.defaultLibrary.cpp", {})
+    hl("@lsp.type.macro.cpp", {})
     hl("@operator", {
         fg = "#dad591"
+    })
+    hl("@lsp.type.type_identifier", {
+        fg = "#b8860b"
     })
     hl("@type", {
         fg = "#b8860b"
@@ -50,9 +57,6 @@ function ColorMyPencils(color)
     })
     hl("Statement", {
         fg = "#9e70ef"
-    })
-    hl("Include", {
-        fg = "#da696d"
     })
     hl("Conditional", {
         fg = "#da696d"
